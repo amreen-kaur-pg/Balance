@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Workout Form</title>
+    <link rel="stylesheet" href="quess.css">
+	<link rel="stylesheet" href="homepgstyle.css">
+	<!--links for icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--icons link end-->
+	<script src="homepage.js"></script>	
+</head>
+<body>
+
+	<header>
+	<div id="header">
+		<div id="logo">
+			<div class="log">
+				<a href="layout.html"><img src="images/logo.png"/></a>
+			</div>
+		</div>
+	<div class="navbarsect1">
+		<div class="subnav">
+				<button class="subnavbtn">Workouts <i class="fa-solid fa-caret-down"></i></button>
+			<div class="subnav-content">
+				<a href="workoutvdo.html"> <img src="images/workout-clipart-1.png" height="80px" width="80px"/> <br>Workout videos</a>
+				<a href="quessionare.html"> <img src="images/custom workout.png" height="80px" width="80px"/> <br>Custom workouts</a>
+				<a href="article.html"> <img src="images/tips.png" height="80px" width="80px"/> <br>Workouts Tips</a>
+			</div>
+		</div> 
+		<div class="subnav">
+				<button class="subnavbtn">Programs <i class="fa-solid fa-caret-down"> </i> </button>
+			<div class="subnav-content">
+				<a href="workoutpg.html"><img src="images/program1.jpg" height="80px" width="80px"/><br>Workout programs</a>
+				<a href="meal plans.html"><img src="images/meal plan.png" height="80px" width="80px"/><br>Meal plans</a>
+				<a href="yoga.html"><img src="images/yoga.jpg" height="80px" width="80px"/><br>Yoga</a>
+			</div>
+		</div> 
+		<div class="subnav">
+				<button class="subnavbtn"> Health and Wellness<i class="fa-solid fa-caret-down"> </i> </button>
+			<div class="subnav-content">
+				<a href="weight loss.html"><img src="images/weightmgt.png" height="80px" width="80px"/><br>Weight Loss</a>
+				<a href="healthy recipes.html"><img src="images/healthy_recipes.png" height="80px" width="80px"/><br>Healthy Recipes</a>
+				<a href="mental health.html"><img src="images/mentalhealth.jpg" height="80px" width="80px"/><br>Mental Health </a>
+			</div>
+		</div>
+		<div class="subnav">
+				<button class="subnavbtn">Apparel and Gear &nbsp;<i class="fa-solid fa-caret-down"> </i> </button>
+			<div class="subnav-content">
+				<a href="clothes.html"><img src="images/clothes.png" height="80px" width="80px"/><br>Workout Clothes</a>
+				<a href="gear.html"><img src="images/gear.png" height="80px" width="80px"/><br>Workout Gear</a>
+				<a href="footware.html"><img src="images/shoes.png" height="80px" width="80px"/><br>Shoes</a>
+			</div>
+		</div>
+		<div class="subnav">
+				<div class="abt"><a  href="aboutus.html"><font color="black">About Us</font></a>
+				</div>
+		</div>
+	</div>
+<div class="navbarsect2">
+	<div class="avatar-container"> 
+        <div class="avatar"> 
+            <img src= "images/avatar.jpg" alt="Your Profile"> 
+        </div> 
+    </div> 
+	<DIV CLASS="prof-text"><a href="#" onclick="alert('Please Sign In First!')";> Your Profile</a> </div>
+	<div class="cart">
+	<i class="fa-solid fa-cart-shopping"></i></div>
+	<DIV CLASS="cart-text"> <a href="#" onclick="alert('Please Sign In First!')";>Your orders</a> </div>
+</div>
+</div>
+</header>
+<h1>Let's plan your custom Workout</h1>
+    <div class="form-container">
+        
+        <form id="workoutForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="focus">Please choose your focus area:</label>
+            <select id="focus" name="focus" required>
+                <option value="">Select</option>
+                <option value="full_body">Full Body</option>
+                <option value="arm">Arm</option>
+                <option value="abs">Abs</option>
+                <option value="butt">Butt</option>
+                <option value="leg">Leg</option>
+            </select>
+
+            <label for="goals">What are your main goals?</label>
+            <select id="goals" name="goals" required>
+                <option value="">Select</option>
+                <option value="lose_weight">Lose Weight</option>
+                <option value="build_muscle">Build Muscle</option>
+                <option value="get_toned">Get Toned</option>
+            </select>
+
+            <label for="motivation">What motivates you the most?</label>
+            <select id="motivation" name="motivation" required>
+                <option value="">Select</option>
+                <option value="feel_confident">Feel Confident</option>
+                <option value="release_stress">Release Stress</option>
+                <option value="improve_health">Improve Health</option>
+                <option value="boost_energy">Boost Energy</option>
+            </select>
+
+            <label for="pushups">How many push-ups can you do at one time?</label>
+            <select id="pushups" name="pushups" required>
+                <option value="">Select</option>
+                <option value="beginner">Beginner (3-5)</option>
+                <option value="intermediate">Intermediate (5-10)</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="activity_level">What's your activity level?</label>
+            <select id="activity_level" name="activity_level" required>
+                <option value="">Select</option>
+                <option value="sedentary">Sedentary</option>
+                <option value="highly_active">Highly Active</option>
+                <option value="moderately_active">Moderately Active</option>
+                <option value="very_active">Very Active</option>
+            </select>
+
+            <label for="weight">What is your weight (in kg)?</label>
+            <input type="text" id="weight" name="weight" required>
+
+            <label for="height">What is your height (in cm)?</label>
+            <input type="text" id="height" name="height" required>
+
+            <button type="submit">Generate Your Plan</button>
+        </form>
+    </div>
+
+    <script>
+    function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+
+        // Validate name: Allow only alphabets
+        if (!/^[a-zA-Z]+$/.test(name)) {
+            alert("Name should contain only alphabets");
+            return false;
+        }
+
+        // Validate email format
+        if (!validateEmail(email)) {
+            alert("Please enter a valid email address");
+            return false;
+        }
+
+        // Validate weight and height: Allow only numeric values
+        if (!/^\d+$/.test(weight) || !/^\d+$/.test(height)) {
+            alert("Weight and height should contain only numeric values");
+            return false;
+        }
+
+        // Display success message
+        alert("Your plan is ready! To access it, kindly check your mail. ");
+        return true;
+    }
+
+    function validateEmail(email) {
+        // Regular expression to validate email format
+        var re = /\S+@\S+\.\S+/;
+        return re.test(email);
+    }
+</script>
+</body>
+</html>

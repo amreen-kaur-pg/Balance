@@ -1,0 +1,40 @@
+p{
+	font-size:25px;
+	padding:15px;
+}
+main h1{
+	color:#052041;
+}
+main h1:hover{
+	color:#052041;
+
+}
+.big-container{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:column;
+}
+.row-one1{
+	width:100%;
+	height:auto;
+	display:flex;
+	flex-direction:row;
+	background-color:#f3f7f6;
+	margin-top:15px;
+}
+h2{
+	font-size:30px;
+	color:orange;
+}
+ li{
+	font-size:20px;
+}
+.part-two{
+	width:75%;
+	padding:20px;
+	font-size:20px;
+}
+.part-one{
+	width:25%;
+}

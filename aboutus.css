@@ -1,0 +1,33 @@
+.content p{
+	font-style:sans-serif;
+	font-family:verdana;
+	font-size:30px;
+	margin:20px;
+}
+.closing{
+	color: red;
+	font-style:sans-serif;
+	font-family:verdana;
+	font-size:45px;
+	margin:20px;
+	text-align:center;
+}
+h2{
+	font-size: 45px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #73ccc7, #0a0a3c);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+	margin-left:20px;
+	margin-top:20px;
+	text-align:left;
+	font-family:sans-serif;
+}
+main h1{
+	color:#052041;
+}
+main h1:hover{
+	color:#052041;
+
+}

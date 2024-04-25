@@ -1,0 +1,67 @@
+main {
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: sans-serif;
+}
+main h1{
+	color:#052041;
+} 
+h2{
+	margin-left:20px;
+	font-size:45px;
+	color:#175977;
+	text-align:left;
+}
+p{margin-left:20px;}
+.meal-card {
+	margin-top:20px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card-header{padding-top:10px;
+	background-color:#cceaf8;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.description{padding:0;
+color:#39527e;
+font-size:25px;
+background-color:#fcd3c8}
+#table {
+    margin-top: auto; /* Pushes the table to the bottom */
+    width: 100%;
+}
+table {
+	width:100%;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+td,th{
+	font-size:20px;
+	padding:5px;
+	word-wrap:break-word;
+}
+tr:hover{
+	background-color:#d6f297;
+}
+th{
+	background-color:yellow;
+}
+.day-column{
+	width:4%;
+}
+.pws{
+	width:12%
+}
+.lunch{width:25%}
